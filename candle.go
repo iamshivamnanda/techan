@@ -9,13 +9,15 @@ import (
 
 // Candle represents basic market information for a security over a given time period
 type Candle struct {
-	Period     TimePeriod
-	OpenPrice  big.Decimal
-	ClosePrice big.Decimal
-	MaxPrice   big.Decimal
-	MinPrice   big.Decimal
-	Volume     big.Decimal
-	TradeCount uint
+	Period            TimePeriod
+	OpenPrice         big.Decimal
+	ClosePrice        big.Decimal
+	MaxPrice          big.Decimal
+	MinPrice          big.Decimal
+	Volume            big.Decimal
+	DeliveryQuantity  big.Decimal
+	DeliveryPerChange big.Decimal
+	TradeCount        uint
 }
 
 // NewCandle returns a new *Candle for a given time period
